@@ -1,0 +1,96 @@
+.card {
+    margin-top: 10em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44em;
+    height: 60em;
+    background: #ffffff;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: #113D6B;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+  }
+  
+  .card .info {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    margin: 1em;
+  }
+  
+  .card .image {
+    width: 9em;
+    height: 9em;
+    background: white;
+    border-top-right-radius: 0.80em;
+    border-bottom-left-radius: 0.80em;
+    clip-path: polygon(20px 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% 20px);
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card a {
+    color: #113D6B;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    transform: scale(1.4);
+  }
+  
+  .card button {
+    padding: 1em 2em;
+    display: block;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  }
+  
+  .card button:hover {
+    background: #113D6B;
+    color: white;
+    cursor: pointer;
+  }
+.darkmode .card {
+  background: #242424;
+}
+.darkmode .card span {
+  color: #73C0FC;
+}
+.darkmode .card a {
+  color: #73C0FC;
+}
+.darkmode .card button:hover {
+  background: #73C0FC;
+}
